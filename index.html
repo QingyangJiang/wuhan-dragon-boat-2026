@@ -132,7 +132,7 @@
 
     .quick-facts {
       display: grid;
-      grid-template-columns: repeat(4, minmax(0, 1fr));
+      grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 10px;
       width: min(1120px, calc(100% - 40px));
       margin: -36px auto 0;
@@ -428,6 +428,40 @@
       padding: 17px;
     }
 
+    .anchor-board {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .anchor-card {
+      min-height: 166px;
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--paper);
+    }
+
+    .anchor-card span {
+      display: block;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .anchor-card h3 {
+      margin: 6px 0 8px;
+      color: var(--tower);
+      font-size: 18px;
+      line-height: 1.35;
+    }
+
+    .anchor-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
     .route-option {
       padding: 18px;
       border-radius: 8px;
@@ -474,6 +508,7 @@
 
       .day-grid,
       .weather-board,
+      .anchor-board,
       .split-band {
         grid-template-columns: 1fr;
       }
@@ -530,7 +565,7 @@
       <div class="hero-copy">
         <div class="kicker">2026 Dragon Boat Holiday · Wuhan</div>
         <h1>端午武汉三日行</h1>
-        <p class="hero-lead">6 月 19 日至 6 月 21 日，按“过早、湖风、寺庙、省博、江边夜景”组织路线。户外集中在上午和傍晚，下午留给家宴、午休和室内避暑。</p>
+        <p class="hero-lead">6 月 19 日至 6 月 21 日，按“汉阳住宿、光谷家宴、过早、湖风、寺庙、省博、江边夜景”组织路线。户外集中在上午和傍晚，最后一天 17:52 从汉口站返程。</p>
       </div>
     </header>
 
@@ -540,8 +575,12 @@
         <strong>6.19 周五 - 6.21 周日</strong>
       </div>
       <div class="fact">
-        <span>主线</span>
-        <strong>过早 + 东湖 + 黄鹤楼 + 省博</strong>
+        <span>住宿</span>
+        <strong>汉阳世贸锦绣长江二期附近</strong>
+      </div>
+      <div class="fact">
+        <span>家宴</span>
+        <strong>6.19 中午 光谷南山府</strong>
       </div>
       <div class="fact">
         <span>预约</span>
@@ -550,6 +589,10 @@
       <div class="fact">
         <span>夜景</span>
         <strong>6.19 司门口天桥 18:30-19:10</strong>
+      </div>
+      <div class="fact">
+        <span>返程</span>
+        <strong>6.21 17:52 汉口站出发</strong>
       </div>
     </div>
 
@@ -593,7 +636,7 @@
             </article>
             <article class="weather-day">
               <h3>6.21 返程日</h3>
-              <p>当天不要把户外街区排满。若降雨，昙华林 / 黎黄陂路改为就近咖啡、商场和站点附近伴手礼，保证送站和返程缓冲。</p>
+              <p>当天 17:52 汉口站出发，不把户外街区排满。若降雨，昙华林 / 黎黄陂路改为就近咖啡、商场和站点附近伴手礼，16:10 前从汉阳住处出发去汉口站。</p>
             </article>
           </div>
         </div>
@@ -609,12 +652,39 @@
         </div>
       </section>
 
+      <section aria-labelledby="anchors">
+        <div class="section-head">
+          <div>
+            <h2 id="anchors">固定地点</h2>
+          </div>
+          <p>公开分享版只展示小区/片区级信息，不放具体楼栋、单元和房号。行程按这三个锚点倒排交通时间。</p>
+        </div>
+
+        <div class="anchor-board">
+          <article class="anchor-card">
+            <span>住宿锚点</span>
+            <h3>汉阳｜世贸锦绣长江二期附近</h3>
+            <p>住在汉阳江边，适合晚上看完江景后回住处；6.21 需要先回这里取行李，再去汉口站。</p>
+          </article>
+          <article class="anchor-card">
+            <span>6.19 中饭</span>
+            <h3>光谷｜南山府</h3>
+            <p>李老师家在光谷方向。6.19 的东湖和家宴顺路放在同一天，傍晚再转司门口黄鹤楼外拍。</p>
+          </article>
+          <article class="anchor-card">
+            <span>返程锚点</span>
+            <h3>汉口站｜6.21 17:52</h3>
+            <p>最后一天按 17:52 发车倒排，建议 17:15 前到站，16:10 前从汉阳住处出发更稳。</p>
+          </article>
+        </div>
+      </section>
+
       <section aria-labelledby="day-619">
         <div class="section-head">
           <div>
             <h2 id="day-619">6.19 周五｜东湖、家宴、黄鹤楼蓝调</h2>
           </div>
-          <p>第一天先把行李和体力安排稳，下午留给李老师家，傍晚卡司门口天桥拍黄鹤楼和长江大桥方向的城市灯光。</p>
+          <p>第一天先到汉阳住处放行李，再去大成路 / 水陆街过早。东湖和光谷南山府放在同一段，傍晚卡司门口天桥拍黄鹤楼和长江大桥方向的城市灯光。</p>
         </div>
 
         <div class="day-grid">
@@ -623,7 +693,7 @@
               <div class="time">09:30-10:30<small>抵达</small></div>
               <div>
                 <h3>到武汉，先放行李</h3>
-                <p>直接去酒店或民宿，轻装开始行程。若房间未好，寄存行李即可。</p>
+                <p>先到汉阳世贸锦绣长江二期附近放行李，轻装开始行程。若房间未好，先寄存或把大件集中放好。</p>
               </div>
             </article>
             <article class="slot">
@@ -643,14 +713,14 @@
               <div class="time">12:15-14:15<small>湖边</small></div>
               <div>
                 <h3>东湖轻游</h3>
-                <p>推荐听涛景区或梨园入口，走湖边、杉林、栈道。6 月中午湿热，不安排暴晒骑行。</p>
+                <p>推荐听涛景区或梨园入口，走湖边、杉林、栈道。随后去光谷南山府方向，6 月中午湿热，不安排暴晒骑行。</p>
               </div>
             </article>
             <article class="slot">
               <div class="time">14:30-16:30<small>中饭</small></div>
               <div>
                 <h3>李老师家中饭 / 休息</h3>
-                <p>把第一天的节奏压下来，给傍晚夜景留体力。</p>
+                <p>地点在光谷南山府。把第一天的节奏压下来，给傍晚从光谷回武昌司门口拍夜景留体力。</p>
               </div>
             </article>
             <article class="slot">
@@ -689,8 +759,8 @@
               <h3>当天原则</h3>
               <ul>
                 <li>行李先处理，别拖箱走景点。</li>
-                <li>东湖只做轻量湖边线，不追求打卡全景区。</li>
-                <li>夜宵地点按住宿位置二选一：武昌住处偏粮道街，汉口住处偏万松园。</li>
+                <li>东湖只做轻量湖边线，不追求打卡全景区；中饭要留出到光谷南山府的路程。</li>
+                <li>夜宵优先选住处回程顺路：武昌粮道街简吃后回汉阳，或过江到汉口万松园再回汉阳。</li>
               </ul>
             </div>
           </aside>
@@ -702,7 +772,7 @@
           <div>
             <h2 id="day-620">6.20 周六｜山海关路、古德寺、省博、江边夜景</h2>
           </div>
-          <p>第二天是内容最满的一天：上午汉口过早和古德寺，下午转湖北省博物馆避暑，晚上在知音号和江滩夜景之间选。</p>
+          <p>第二天从汉阳住处出发跨江去汉口过早和古德寺，下午转湖北省博物馆避暑，晚上在知音号和江滩夜景之间选，结束后回汉阳。</p>
         </div>
 
         <div class="day-grid">
@@ -711,7 +781,7 @@
               <div class="time">08:00-09:15<small>过早</small></div>
               <div>
                 <h3>山海关路</h3>
-                <p>热干面、豆皮、面窝、蛋酒都可以安排。端午早高峰加排队，建议别晚到。</p>
+                <p>从汉阳住处出发去汉口，热干面、豆皮、面窝、蛋酒都可以安排。端午早高峰加排队，建议别晚到。</p>
               </div>
             </article>
             <article class="slot">
@@ -732,7 +802,7 @@
               <div class="time">13:15-14:15<small>午休</small></div>
               <div>
                 <h3>回酒店避暑</h3>
-                <p>这是全程的体力缓冲段，避免下午在省博之前已经被热垮。</p>
+                <p>可回汉阳住处午休，也可就近找商场 / 咖啡店避暑。这是全程的体力缓冲段，避免下午在省博之前已经被热垮。</p>
               </div>
             </article>
             <article class="slot">
@@ -774,11 +844,11 @@
         <div class="split-band" aria-label="6月20日晚间方案">
           <div class="route-option">
             <h3>方案 A｜知音号看演出</h3>
-            <p>19:30-21:00 预留给知音号。演出时间以官方排期和购票页面为准，适合想要更完整夜间体验的版本。</p>
+            <p>19:30-21:00 预留给知音号。演出时间以官方排期和购票页面为准，适合想要更完整夜间体验的版本；结束后从汉口回汉阳住处。</p>
           </div>
           <div class="route-option">
             <h3>方案 B｜汉口江滩漫步</h3>
-            <p>19:30-21:30 走武汉关、江汉关、长江二桥方向。不上船时选择这条，节奏更松，也方便接夜宵。</p>
+            <p>19:30-21:30 走武汉关、江汉关、长江二桥方向。不上船时选择这条，节奏更松，也方便接夜宵；注意别太晚回汉阳。</p>
           </div>
         </div>
       </section>
@@ -788,7 +858,7 @@
           <div>
             <h2 id="day-621">6.21 周日｜欢送年哥、吃吃逛逛</h2>
           </div>
-          <p>最后一天不再压强景点，围绕返程交通做轻量吃逛，留出送站和伴手礼时间。</p>
+          <p>最后一天 17:52 从汉口站出发，不再压强景点。上午欢送年哥，下午围绕汉阳住处取行李和去汉口站倒排。</p>
         </div>
 
         <div class="day-grid">
@@ -797,35 +867,49 @@
               <div class="time">08:30-09:45<small>过早</small></div>
               <div>
                 <h3>按住处就近收尾</h3>
-                <p>想收尾可以再吃一次豆皮、糊汤粉或烧卖。最后一天不要跨城排队。</p>
+                <p>以汉阳住处附近或当天送行路线为准。想收尾可以再吃一次豆皮、糊汤粉或烧卖，最后一天不要跨城排队。</p>
               </div>
             </article>
             <article class="slot">
               <div class="time">10:00-11:00<small>送行</small></div>
               <div>
                 <h3>欢送年哥</h3>
-                <p>预留去车站或机场的交通缓冲，端午返程日别压点。</p>
+                <p>预留去年哥返程点的交通缓冲，端午返程日别压点。送完后行程立刻切回“轻量吃逛 + 取行李”。</p>
               </div>
             </article>
             <article class="slot">
               <div class="time">11:15-13:00<small>吃逛</small></div>
               <div>
-                <h3>昙华林 / 粮道街</h3>
-                <p>咖啡、小店、伴手礼，午餐可补藕汤或武昌鱼。</p>
+                <h3>就近吃逛</h3>
+                <p>优先选汉阳 / 汉口方向，减少返程绕路。午餐可补藕汤、武昌鱼或轻量楚菜。</p>
               </div>
             </article>
             <article class="slot">
-              <div class="time">13:30-15:30<small>备选</small></div>
+              <div class="time">13:15-15:00<small>轻逛</small></div>
               <div>
-                <h3>黎黄陂路、江汉路或晴川阁外观</h3>
-                <p>按返程地点选择，不再安排强体力景点。汉口返程偏黎黄陂路 / 江汉路，武昌返程偏晴川阁外观。</p>
+                <h3>江汉路 / 黎黄陂路 / 晴川阁外观三选一</h3>
+                <p>按当时位置选最近的一处，不再安排远距离跨城打卡。下雨就改商场、咖啡店或站点附近伴手礼。</p>
               </div>
             </article>
             <article class="slot">
-              <div class="time">返程前<small>伴手礼</small></div>
+              <div class="time">15:00-15:50<small>行李</small></div>
               <div>
-                <h3>带走武汉味道</h3>
-                <p>蔡林记热干面礼盒、周黑鸭、孝感米酒、绿豆糕或粽子。</p>
+                <h3>回汉阳住处取行李</h3>
+                <p>把伴手礼和行李整理好，别把取行李压到 16:00 以后。可带蔡林记热干面礼盒、周黑鸭、孝感米酒、绿豆糕或粽子。</p>
+              </div>
+            </article>
+            <article class="slot">
+              <div class="time">16:10 前<small>出发</small></div>
+              <div>
+                <h3>从汉阳住处去汉口站</h3>
+                <p>建议 16:10 前出发，给端午返程交通、进站安检和找检票口留足缓冲。</p>
+              </div>
+            </article>
+            <article class="slot">
+              <div class="time">17:15-17:52<small>返程</small></div>
+              <div>
+                <h3>汉口站候车 / 发车</h3>
+                <p>目标 17:15 前到站，17:52 从汉口站出发。</p>
               </div>
             </article>
           </div>
@@ -836,15 +920,15 @@
                 <div class="image">
                   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Wuhan-meets.jpg/960px-Wuhan-meets.jpg" alt="武汉小吃：豆皮、热干面、桂花糊米酒">
                 </div>
-                <figcaption>最后一天用吃逛收尾，保持灵活，不为了打卡牺牲返程缓冲。</figcaption>
+                <figcaption>最后一天用吃逛收尾，保持灵活，不为了打卡牺牲 17:52 汉口站返程缓冲。</figcaption>
               </figure>
             </div>
             <div class="note-panel">
               <h3>返程策略</h3>
               <ul>
-                <li>当天全部安排都可以按行李寄存点和车站位置调整。</li>
-                <li>若下雨，优先江汉路、商场和咖啡店，不硬走户外街区。</li>
-                <li>伴手礼尽量在返程站点附近买，减少拎包时间。</li>
+                <li>核心节点：15:50 前取好行李，16:10 前从汉阳住处出发。</li>
+                <li>若下雨，优先商场、咖啡店和站点附近伴手礼，不硬走户外街区。</li>
+                <li>伴手礼尽量在住处或汉口站附近买，减少拎包时间。</li>
               </ul>
             </div>
           </aside>
